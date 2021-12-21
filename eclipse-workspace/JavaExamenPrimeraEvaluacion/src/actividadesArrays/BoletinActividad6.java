@@ -21,8 +21,9 @@ public class BoletinActividad6 {
 		q = kb.nextInt();
 		tamaño=q-p;
 		int [] arrayPQ = new int [tamaño];
-		for(;p<q;p++) {
+		
 			for(int cont=0;cont<arrayPQ.length;cont++) {
+				for(;p<=q;p++) {
 				arrayPQ[cont]=p;
 				System.out.println("La posicion del array es " + cont + " y su valor es " + arrayPQ[cont]);
 
