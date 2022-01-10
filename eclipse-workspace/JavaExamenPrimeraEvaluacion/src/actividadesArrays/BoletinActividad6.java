@@ -10,7 +10,7 @@ public class BoletinActividad6 {
 		//Variables
 		int p=0;
 		int q=0;
-		int tamaño=0;
+		int tamano=0;
 		int cont=0;
 
 		//-------------------------------------------------
@@ -20,8 +20,9 @@ public class BoletinActividad6 {
 		p = kb.nextInt();
 		System.out.println("Introduce el valor de q");
 		q = kb.nextInt();
-		tamaño=q-p+1;
-		int [] arrayPQ = new int [tamaño];
+		tamano=q-p+1;
+		int [] arrayPQ = new int [tamano];
+		
 		
 			while(cont<arrayPQ.length) {
 				for(;p<=q;p++) {

@@ -1,7 +1,7 @@
 package actividadesArrays;
 
 public class ArrayEjercicio4Evaluable {
-	/*
+	/**
 	 * Este metodo devolvera la suma de las matrices que se le pasen por parametro
 	 * */
 	public static void  sumarMatrices(int matriz1[][],int matriz2[][]) {
