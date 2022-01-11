@@ -7,7 +7,7 @@ public class JuegoDebug {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-				String menu = "[ESCRIBE LAS INSTRUCCIONES QUE SE DEBERÍAN MOSTRAR AL USUARIO UNA VEZ SEPAS DE QUE VA EL JUEGO]";
+				String menu = "[El usuario repetira contraseñas hasta que las acierte decidiendo antes si se repetiran o no dandole pistas cuendo se equivoque varias veces ]";
 				
 				// Imprimir menú
 				System.out.println(menu);
