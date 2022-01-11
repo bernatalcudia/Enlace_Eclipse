@@ -6,7 +6,7 @@ public class PositivoONegativo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// TODO Auto-generated method stub
-				//Programa que comprueba si eres o no mayor de edad.
+				//Programa que comprueba si el numero introducido es positivo o negativo.
 				//Variables
 				int numerointroducido=0;
 
