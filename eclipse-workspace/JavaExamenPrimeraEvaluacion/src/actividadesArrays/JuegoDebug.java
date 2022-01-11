@@ -30,7 +30,7 @@ public class JuegoDebug {
 
 			}
 				/**
-		 		* Con este metodo obtendremos la contraseña que supoine el usuario*/
+		 		* Con este metodo obtendremos la contraseña que supone el usuario*/
 			private static String obtenerSuposicionDeUsuario(int longitud) {
 				String eleccion = "";
 				while (eleccion.length() != longitud) {
