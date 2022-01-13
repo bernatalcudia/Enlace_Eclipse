@@ -1,6 +1,6 @@
-package dam.bernat;
+package ActividadesClases;
 
-public class coche {
+public class Coche {
 	
 	
 	//Atributos
@@ -9,21 +9,27 @@ public class coche {
 	private int motor;
 	private String marca;
 	private String modelo;
+	private double revoluciones;
+	private int marchas;
+	private boolean encendido;
 	
 	
 	//Constructores
 	
 	
-	public coche () {
+	public Coche () {
 		
 	}
 	
-	public coche (int ruedas,int motor,String marca,String modelo) {
+	public Coche (int ruedas,int motor,String marca,String modelo,double revoluciones,int marchas,boolean encendido) {
 		
 		this.ruedas = ruedas;
 		this.motor = motor;
 		this.marca = marca;
 		this.modelo = modelo;
+		this.revoluciones = revoluciones;
+		this.marchas = marchas;
+		this.encendido = encendido;
 		
 		
 	}
@@ -36,28 +42,50 @@ public class coche {
 	
 	public int getRuedas () {
 		
-		return ruedas;
+		return this.ruedas;
 	}
 	
-	public int motor () {
+	public int getMotor () {
 		
 		
-		return motor;
+		return this.motor;
 	}
 	
 	
 	public String getMarca () {
 		
 		
-		return marca;
+		return this.marca;
 	}
 	
 	public String getModelo () {
 		
 		
-		return modelo;
+		return this.modelo;
 	}
 	
+	public double getRevoluciones(){
+		
+		return this.revoluciones;
+	}
+	
+	public int getMarchas() {
+		
+		return this.marchas;
+	}
+	
+	public boolean getEncendido() {
+		
+		return this.encendido;
+	}
+	
+	public String getEncendidoBonito() {
+		if(this.encendido==true)  {
+			return  ("Tu motor esta encendido");
+		}else {
+			 return  ("Tu motor esta apagado");
+		}
+	}
 	
 	
 	//Setters
@@ -88,73 +116,46 @@ public class coche {
 		
 	}
 	
+	public void setRevoluciones(double revoluciones) {
+		
+		this.revoluciones = revoluciones;
+	}
+	
+	public void setMarchas(int marchas) {
+		
+		this.marchas = marchas;
+	}
+	
+	public void setEncendido(boolean encendido) {
+		
+		this.encendido = encendido;
+	}
+	
 	
 	
 	//Metodos
 	
 	 public void encenderMotor () {
-		
 		 
-		 System.out.println("El motor esta encendido");
+		 this.encendido = true;
+		 
 	}
 	 
 	 
 	 public void apagarMotor () {
 		 
-		 
-		 System.out.println("El motor esta apagado");
+		 this.encendido = false;
 		 
 	 }
-	
 	 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	 public void comprobarRevoluciones() {
+		 System.out.println("Tu numero de revoluciones es:" + this.revoluciones);
+	 }
+	 
+	 public void comprobarMarchas() {
+		 
+		 System.out.println("Tu numero de marchas  es:" + this.marchas);
+	 }
+
 
 }
