@@ -7,7 +7,7 @@ public class JuegoDebug {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-				String menu = "[El usuario repetira contraseñas hasta que las acierte decidiendo antes si se repetiran o no dandole pistas cuendo se equivoque varias veces ]";
+				String menu = "[1- El usuario dara la contraseña que piesa que es /n,Segundo paso cuando el usuario se equivoque varias veces se le dara una pista si acierta se traducira en * si no acieta en - ]";
 				
 				// Imprimir menú
 				System.out.println(menu);

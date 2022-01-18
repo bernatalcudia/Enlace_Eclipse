@@ -21,6 +21,13 @@ public class Coche {
 		
 	}
 	
+	public Coche (int ruedas,int motor,String marca) {
+		
+		this.ruedas = ruedas;
+		this.motor = motor;
+		this.marca = marca;
+	}
+	
 	public Coche (int ruedas,int motor,String marca,String modelo,double revoluciones,int marchas,boolean encendido) {
 		
 		this.ruedas = ruedas;
@@ -155,6 +162,10 @@ public class Coche {
 	 public void comprobarMarchas() {
 		 
 		 System.out.println("Tu numero de marchas  es:" + this.marchas);
+	 }
+	 
+	 public String toString() {
+		 return "Tu numero de ruedas  es:" + "/" + ruedas+ "/" +"Tu numero de motor es:" +motor+  "/" +"Tu marca y tu  modelo son" +marca + modelo+ "/" +"el numero de revoluciones y tus marchas son"+ "/" +revoluciones + "/" + marchas+getEncendidoBonito();
 	 }
 
 
