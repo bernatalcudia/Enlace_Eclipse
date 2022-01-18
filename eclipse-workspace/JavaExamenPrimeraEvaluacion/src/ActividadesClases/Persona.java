@@ -12,7 +12,7 @@ public class Persona {
 		this.nombre=nombre;
 		this.edad=0;
 	}
-	//Metodos(Connstructores)
+	//*Metodos(Connstructores)
 	
 	//Getters
 	public String getNombre() {

@@ -45,7 +45,7 @@ public class Coche {
 	//Meotodos(Constructores)
 	
 	
-	//Getters
+		//Getters
 	
 	public int getRuedas () {
 		
@@ -95,7 +95,7 @@ public class Coche {
 	}
 	
 	
-	//Setters
+		//Setters
 	
 	
 	public void setRuedas (int ruedas) {

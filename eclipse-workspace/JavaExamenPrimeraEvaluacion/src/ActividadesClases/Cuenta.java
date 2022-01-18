@@ -16,7 +16,7 @@ public class Cuenta {
 		this.tipoInteres=tipoInteres;
 		this.saldo=saldo;
 	}
-//Getters
+	//Getters
 	public String getNombreCliente() {
 		return nombreCliente;
 	}
@@ -29,7 +29,7 @@ public class Cuenta {
 	public double getSaldo() {
 		return saldo;
 	}
-//Setters
+	//Setters
 	public void setNombreCliente(String nombreCliente) {
 		this.nombreCliente=nombreCliente;
 	}
