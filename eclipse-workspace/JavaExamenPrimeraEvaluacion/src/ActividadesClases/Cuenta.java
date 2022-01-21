@@ -1,5 +1,7 @@
 package ActividadesClases;
 
+
+
 public class Cuenta {
 //Atributos
 	private String nombreCliente;
@@ -43,4 +45,35 @@ public class Cuenta {
 	}
 	
 //Metodos
+	public boolean ingresar(double saldo){
+		boolean validacion=false;
+		if(saldo>=0) {
+			saldo = this.saldo + saldo;
+			validacion=true;
+		}else {
+			 validacion=false;
+		}
+		return validacion;
+	}
+	
+	public boolean reintegro(double saldo){
+		boolean validacion=false;
+		if(this.saldo>=saldo) {
+			saldo= this.saldo-saldo;
+			validacion=true;
+		}else {
+			validacion=false;
+		}
+		return validacion;
+	}
+	public double transferencia(Cuenta destino,double saldo) {
+		if(destino.getSaldo()>=this.saldo) {
+			destino.setSaldo(this.saldo + saldo);
+			this.saldo=this.saldo-saldo;
+		}else {
+			
+		}
+		return destino.getSaldo();
+	}
 }
+

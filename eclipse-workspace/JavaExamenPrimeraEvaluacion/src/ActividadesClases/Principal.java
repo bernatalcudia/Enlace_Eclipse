@@ -24,7 +24,7 @@ public class Principal {
 		System.out.println(Luis.toString());
 		System.out.println(Maria.toString());
 		
-		Luis.setEdad(Maria.getEdad()-Pepe.getEdad());
+		Luis.setEdad(Luis.getEdad()+Maria.getEdad()-Pepe.getEdad());
 		
 		System.out.println(Pepe.toString());
 		System.out.println(Luis.toString());

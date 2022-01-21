@@ -6,7 +6,6 @@ public class Persona {
 	private int edad;
 	//Constructores
 	public Persona() {
-		
 	}
 	public Persona(String nombre) {
 		this.nombre=nombre;
@@ -16,10 +15,10 @@ public class Persona {
 	
 	//Getters
 	public String getNombre() {
-		return nombre;
+		return this.nombre;
 	}
 	public int getEdad() {
-		return edad;
+		return this.edad;
 	}
 	
 	//Setters
@@ -34,6 +33,4 @@ public class Persona {
 	public String toString() {
 		return "Tu edad es" + this.edad + "y tu nommbre es" + this.nombre;
 	}
-	
-
 }
