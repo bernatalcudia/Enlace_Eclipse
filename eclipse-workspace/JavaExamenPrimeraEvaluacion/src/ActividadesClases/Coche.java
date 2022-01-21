@@ -1,8 +1,6 @@
 package ActividadesClases;
 
 public class Coche {
-	
-	
 	//Atributos
 	
 	private int ruedas;
@@ -18,18 +16,15 @@ public class Coche {
 	
 	
 	public Coche () {
-		
 	}
 	
 	public Coche (int ruedas,int motor,String marca) {
-		
 		this.ruedas = ruedas;
 		this.motor = motor;
 		this.marca = marca;
 	}
 	
 	public Coche (int ruedas,int motor,String marca,String modelo,double revoluciones,int marchas,boolean encendido) {
-		
 		this.ruedas = ruedas;
 		this.motor = motor;
 		this.marca = marca;
@@ -37,52 +32,37 @@ public class Coche {
 		this.revoluciones = revoluciones;
 		this.marchas = marchas;
 		this.encendido = encendido;
-		
-		
 	}
 	
-	
 	//Meotodos(Constructores)
-	
 	
 		//Getters
 	
 	public int getRuedas () {
-		
 		return this.ruedas;
 	}
-	
+
 	public int getMotor () {
-		
-		
 		return this.motor;
 	}
 	
-	
 	public String getMarca () {
-		
-		
 		return this.marca;
 	}
 	
 	public String getModelo () {
-		
-		
 		return this.modelo;
 	}
 	
 	public double getRevoluciones(){
-		
 		return this.revoluciones;
 	}
 	
 	public int getMarchas() {
-		
 		return this.marchas;
 	}
 	
 	public boolean getEncendido() {
-		
 		return this.encendido;
 	}
 	
@@ -93,66 +73,46 @@ public class Coche {
 			 return  ("Tu motor esta apagado");
 		}
 	}
-	
-	
 		//Setters
 	
 	
 	public void setRuedas (int ruedas) {
-		
-		
 		this.ruedas = ruedas;
 	}
 	
 	public void setMotor (int motor) {
-		
-		
 		this.motor = motor;
 	}
 	
 	public void setMarca (String marca) {
-		
-		
 		this.marca = marca;
 	}
 	
 	public void setModelo (String modelo) {
-		
-		
 		this.modelo = modelo;
-		
 	}
 	
 	public void setRevoluciones(double revoluciones) {
-		
 		this.revoluciones = revoluciones;
 	}
 	
 	public void setMarchas(int marchas) {
-		
 		this.marchas = marchas;
 	}
 	
 	public void setEncendido(boolean encendido) {
-		
 		this.encendido = encendido;
 	}
-	
-	
 	
 	//Metodos
 	
 	 public void encenderMotor () {
-		 
 		 this.encendido = true;
-		 
 	}
 	 
 	 
 	 public void apagarMotor () {
-		 
 		 this.encendido = false;
-		 
 	 }
 	 
 	 public void comprobarRevoluciones() {
@@ -160,13 +120,10 @@ public class Coche {
 	 }
 	 
 	 public void comprobarMarchas() {
-		 
 		 System.out.println("Tu numero de marchas  es:" + this.marchas);
 	 }
 	 
 	 public String toString() {
 		 return "Tu numero de ruedas  es:" + "/" + ruedas+ "/" +"Tu numero de motor es:" +motor+  "/" +"Tu marca y tu  modelo son" +marca + modelo+ "/" +"el numero de revoluciones y tus marchas son"+ "/" +revoluciones + "/" + marchas+getEncendidoBonito();
 	 }
-
-
 }

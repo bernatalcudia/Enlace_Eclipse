@@ -8,7 +8,6 @@ public class Cuenta {
 	private double saldo;
 //Metodos(Constructores)
 	public Cuenta() {
-		
 	}
 	public Cuenta(String nombreCliente,String numeroCuenta,double tipoInteres,double saldo) {
 		this.nombreCliente=nombreCliente;
@@ -18,16 +17,16 @@ public class Cuenta {
 	}
 	//Getters
 	public String getNombreCliente() {
-		return nombreCliente;
+		return this.nombreCliente;
 	}
 	public String getNumeroCuenta() {
-		return numeroCuenta; 
+		return this.numeroCuenta; 
 	}
 	public double getTipoInteres() {
-		return tipoInteres;
+		return this.tipoInteres;
 	}
 	public double getSaldo() {
-		return saldo;
+		return this.saldo;
 	}
 	//Setters
 	public void setNombreCliente(String nombreCliente) {
