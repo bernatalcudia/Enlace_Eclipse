@@ -1,5 +1,6 @@
 package ActividadesClases;
 
+
 public class Cazadores {
 	//Constantes
 		public static final boolean muerto=false;
