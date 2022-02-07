@@ -1,6 +1,5 @@
 package ActividadesClases;
 
-
 public class Dragones {
 	//Constantes
 	public static final boolean muerto=false;
