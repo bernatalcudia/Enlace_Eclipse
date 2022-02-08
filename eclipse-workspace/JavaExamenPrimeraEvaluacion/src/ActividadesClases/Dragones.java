@@ -19,7 +19,7 @@ public class Dragones {
 	private int velocidad_base;
 	private boolean estado;
 	private Cazadores[] cazadores;
-	//Constructores
+	//Constructores()
 	public Dragones() {
 		
 	}

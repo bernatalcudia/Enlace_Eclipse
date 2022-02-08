@@ -7,7 +7,7 @@ public class Principal {
 		
 		/*Coche coche1 = new Coche(5,44,"Mercedes");
 		Coche coche2 = new Coche(8,10,"Ferrari","x",100,2,true);
-		Coche coche3 = new Coche();
+		Coche coche3 = new Coche();qw
 		
 		System.out.println(coche2.toString());
 		System.out.println(coche1.toString());
