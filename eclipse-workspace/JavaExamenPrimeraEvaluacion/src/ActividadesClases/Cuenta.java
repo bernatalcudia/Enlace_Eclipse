@@ -1,5 +1,7 @@
 package ActividadesClases;
 
+
+
 public class Cuenta {
 //Atributos
 	private String nombreCliente;
@@ -8,7 +10,6 @@ public class Cuenta {
 	private double saldo;
 //Metodos(Constructores)
 	public Cuenta() {
-		
 	}
 	public Cuenta(String nombreCliente,String numeroCuenta,double tipoInteres,double saldo) {
 		this.nombreCliente=nombreCliente;
@@ -18,16 +19,16 @@ public class Cuenta {
 	}
 	//Getters
 	public String getNombreCliente() {
-		return nombreCliente;
+		return this.nombreCliente;
 	}
 	public String getNumeroCuenta() {
-		return numeroCuenta; 
+		return this.numeroCuenta; 
 	}
 	public double getTipoInteres() {
-		return tipoInteres;
+		return this.tipoInteres;
 	}
 	public double getSaldo() {
-		return saldo;
+		return this.saldo;
 	}
 	//Setters
 	public void setNombreCliente(String nombreCliente) {
@@ -44,4 +45,35 @@ public class Cuenta {
 	}
 	
 //Metodos
+	public boolean ingresar(double saldo){
+		boolean validacion=false;
+		if(saldo>=0) {
+			saldo = this.saldo + saldo;
+			validacion=true;
+		}else {
+			 validacion=false;
+		}
+		return validacion;
+	}
+	
+	public boolean reintegro(double saldo){
+		boolean validacion=false;
+		if(this.saldo>=saldo) {
+			saldo= this.saldo-saldo;
+			validacion=true;
+		}else {
+			validacion=false;
+		}
+		return validacion;
+	}
+	public double transferencia(Cuenta destino,double saldo) {
+		if(destino.getSaldo()>=this.saldo) {
+			destino.setSaldo(this.saldo + saldo);
+			this.saldo=this.saldo-saldo;
+		}else {
+			
+		}
+		return destino.getSaldo();
+	}
 }
+
