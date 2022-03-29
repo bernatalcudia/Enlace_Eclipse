@@ -1,4 +1,4 @@
-package actividadesArrays;
+ package actividadesArrays;
 
 import java.util.Scanner;
 
