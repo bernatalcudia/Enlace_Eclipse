@@ -1,4 +1,5 @@
 package ActividadesArrayList;
+
 import java.util.ArrayList;
 
 public class Carrito {
@@ -33,14 +34,17 @@ public class Carrito {
 			return comprobacion;
 		}
 		
-		public String precioTotalDelCarrito() {
-			String comprobacion="Tu total se a mostrado correctamente";
-			return comprobacion;
+		public double precioTotalDelCarrito() {
+			double precio = 0;
+			for (Producto p : productos) {
+				precio += p.getPrecio();
+			}
+			System.out.println("El precio total de tu carrito es: " + precio);
+			return precio;
 		}
 
-		public String precioConDescuento() {
-			String comprobacion="Tu total se a mostrado correctamente";
-			return comprobacion;
+		public double precioConDescuento() {
+			return (precioTotalDelCarrito()*0.85);
 	
 		}
 		
