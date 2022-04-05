@@ -1,9 +1,10 @@
 package ActividadesArrayList;
 
+
 public class Usuario {
 		//Constantes
 	public static final int user=1;
-	public static final int admnin=2;
+	public static final int admin=2;
 	public static final int socio=3;
 		
 	

@@ -1,5 +1,6 @@
 package ActividadesArrayList;
 
+
 public class Categoria {
 		//Constantes
 		//Atributos

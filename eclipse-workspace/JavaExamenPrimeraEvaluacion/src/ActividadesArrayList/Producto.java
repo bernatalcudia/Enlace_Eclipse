@@ -1,5 +1,6 @@
 package ActividadesArrayList;
 
+
 public class Producto {
 		//Constantes
 		//Atributosd 

@@ -13,7 +13,7 @@ public class Principal {
 		System.out.println(coche1.toString());
 		System.out.println(coche3.toString());*/
 		
-		Persona Pepe = new Persona("Pepe");
+		/*Persona Pepe = new Persona("Pepe");
 		Persona Luis = new Persona("Luis");
 		Persona Maria = new Persona("Maria");
 		
@@ -29,7 +29,9 @@ public class Principal {
 		
 		System.out.println(Pepe.toString());
 		System.out.println(Luis.toString());
-		System.out.println(Maria.toString());
+		System.out.println(Maria.toString());*/
+		
+		
 
 	}
 
