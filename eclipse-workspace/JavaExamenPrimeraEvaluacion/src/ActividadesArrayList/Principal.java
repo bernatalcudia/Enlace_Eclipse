@@ -3,6 +3,78 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Principal {
+	public static void mostrarProductoCarrito() {
+		
+		Carrito carr =  new Carrito();
+		
+		for(Producto productos:carr.getProductos()) {
+			System.out.println("Tus productos son: " + productos.getId() +  productos.getNombre() + productos.getPrecio() + productos.getCategoria() );
+		}
+	}
+	public static void eliminarProductoCarrito() {
+		Scanner kb = new Scanner(System.in);
+		
+		Carrito carr =  new Carrito();
+		int id=0;
+		String categoria="";
+		 System.out.println("Cual es el id de tu producto:");
+		 id = kb.nextInt();
+		 System.out.println("Cual es la categoria de tu producto:");
+		 categoria = kb.nextLine();
+		 for(Producto productos:carr.getProductos()) {
+				if(productos.getId()==id && productos.getCategoria().equals(categoria)) {
+					carr.eliminarProductoAlCarrito(productos);
+				}else {
+					System.out.println("Producto no encontrado en la base de datos o informacion enviada no correcta intentelo de nuevo");
+				}
+		 }
+	}
+	public static void añadirProductoCarrito() {
+		Scanner kb = new Scanner(System.in);
+		Carrito carr = new Carrito();
+		int id=0;
+		String categoria="";
+		 System.out.println("Cual es el id de tu producto:");
+		 id = kb.nextInt();
+		 System.out.println("Cual es la categoria de tu producto:");
+		 categoria = kb.nextLine();
+		 for(Producto productos:carr.getProductos()) {
+				if(productos.getId()==id && productos.getCategoria().equals(categoria)) {
+					carr.añadirProductoAlCarrito(productos);
+				}else {
+					System.out.println("Producto no encontrado en la base de datos o informacion enviada no correcta intentelo de nuevo");
+				
+				}
+		 }
+			 }
+	
+	public static Producto mostrarProductoMasBaratoTienda(ArrayList<Producto> productos) {
+		
+		double masBarato=0;
+		Producto productoMasBarato=null;
+		for(Producto producto:productos) {
+			if(producto.getPrecio()<=masBarato) {
+				masBarato=producto.getPrecio();
+				productoMasBarato = producto;
+			}
+				
+			
+		}
+		return productoMasBarato;
+	}
+	public static Producto mostrarProductoMasCaroTienda(ArrayList<Producto> productos) {
+		
+		double masCaro=0;
+		Producto productoMasCaro=null;
+	
+		for(Producto producto:productos) {
+			if(producto.getPrecio()>=masCaro) {
+				masCaro=producto.getPrecio();
+				productoMasCaro = producto;
+			}
+		}
+		return productoMasCaro;
+	}
 	public static String modificarNombreCategorias(ArrayList<Categoria> categorias) {
 		String comprobacion="Nombre modificado correctamente";
 		Scanner kb = new Scanner(System.in);
@@ -17,7 +89,7 @@ public class Principal {
 				if(categoria.getId()==id && categoria.getNombre().equals(nombre)) {
 					categoria.setNombre(nuevonombre);
 				}else {
-					System.out.println("Produto no encontrado en la base de datos o informacion enviada no correcta intentelo de nuevo");
+					System.out.println("Producto no encontrado en la base de datos o informacion enviada no correcta intentelo de nuevo");
 				}
 			 }
 		 kb.close();
@@ -40,7 +112,7 @@ public class Principal {
 			if(producto.getId()==id && producto.getCategoria().equals(categoria)) {
 				producto.setPrecio(precio);
 			}else {
-				System.out.println("Produto no encontrado en la base de datos o informacion enviada no correcta intentelo de nuevo");
+				System.out.println("Producto no encontrado en la base de datos o informacion enviada no correcta intentelo de nuevo");
 			}
 		 }
 		 kb.close();
@@ -63,7 +135,7 @@ public class Principal {
 			if(producto.getId()==id && producto.getCategoria().equals(categoria)) {
 				producto.setNombre(nombre);
 			}else {
-				System.out.println("Produto no encontrado en la base de datos o informacion enviada no correcta intentelo de nuevo");
+				System.out.println("Producto no encontrado en la base de datos o informacion enviada no correcta intentelo de nuevo");
 			}
 		 }
 		 kb.close();
@@ -125,9 +197,7 @@ public class Principal {
 				Scanner kb = new Scanner(System.in);
 				int funcion;
 		do {
-			
 		
-				
 				System.out.println("A que funcion desea acceder:");
 				System.out.println("1-Listar Productos");
 				System.out.println("2-Modificar el nombre productos");
@@ -162,10 +232,7 @@ public class Principal {
 		
 			}
 		}
-		
-		
 	}
-		
 	public static void menuFrontOfice() {
 		Datos datos = new Datos();
 		ArrayList<Usuario> usuarios = datos.getUsuarios();
@@ -188,9 +255,15 @@ public class Principal {
 		 
 		 switch(funcion) {
 		 case 1:
+			 mostrarProductoMasCaroTienda(productos);
 		 case 2:
+			 mostrarProductoMasBaratoTienda(productos);
 		 case 3:
+			 añadirProductoCarrito();
 		 case 4:
+			 eliminarProductoCarrito();
+		 case 5:
+			 mostrarProductoCarrito();
 		 case 99:
 			 funcion=-1;
 		default:

@@ -10,9 +10,7 @@ public class Carrito {
 		public Carrito() {
 			
 		}
-		public Carrito(ArrayList<Producto> productos) {
-			this.productos=productos;
-		}
+		
 		//Metodos(Constructores)
 			//Getters
 		public ArrayList<Producto> getProductos() {
